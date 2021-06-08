@@ -1,5 +1,5 @@
 import express from 'express'
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8000
 
 app.use(bodyParser.json())
 
-dotenv.config()
+// dotenv.config()
 
 mongoose
   .connect(process.env.DATABASE_URL, {
