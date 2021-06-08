@@ -1,0 +1,24 @@
+GET http://localhost:8000/posts
+
+###
+GET http://localhost:8000/posts/60bf63c047093641c4579429
+
+###
+POST  http://localhost:8000/posts
+Content-Type:application/json
+
+{
+  "title": "Title1",
+  "content":"This is the content of the blog"
+}
+
+###
+DELETE http://localhost:8000/posts/60bf63c047093641c4579429
+
+###
+PATCH http://localhost:8000/posts/60bf698396c6362e84d1270b
+Content-Type:application/json
+
+{
+  "title": "Updated Title"
+}
